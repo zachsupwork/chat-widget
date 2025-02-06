@@ -2,30 +2,127 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Chat Widget - by GPT 4</title>
-    <script async src="./chat-widget.js"></script>
+    <title>Landing Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?technology,nature') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        .hero-content {
+            max-width: 600px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1rem;
+            color: white;
+            background: #ff6600;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #ff4500;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+            text-align: center;
+            background: white;
+        }
+        .feature-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .feature-box img {
+            width: 100px;
+            height: 100px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
-<body class="bg-yellow-100">
-    <div class="flex flex-col items-center p-8 justify-center w-5xl h-screen md:text-center md:w-3xl ">
-        <div>
-            <h1 class="text-2xl font-bold leading-relaxed">About 95% of the code for this widget is written by GPT-4, I just edited and adjust a few things</h1>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Landing Page</h1>
+            <p>Discover the best solutions for your business</p>
+            <a href="#" class="btn">Get Started</a>
         </div>
-
-    <div class="pt-8">
-        <a href="https://github.com/anantrp/chat-widget"class="relative inline-block px-4 py-2 font-medium group">
-            <span class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-            <span class="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
-            <span class="relative text-black group-hover:text-white">GitHub Repo</span>
-        </a>
-
-        <a href="https://twitter.com/anantrp" target="_blank" class="relative inline-block px-4 py-2 font-medium group ml-8">
-            <span class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-            <span class="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
-            <span class="relative text-black group-hover:text-white">@anantrp</span>
-        </a>
     </div>
+
+    <!-- Features Section -->
+    <div class="features">
+        <div class="feature-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Feature 1">
+            <h2>Fast & Reliable</h2>
+            <p>Our platform is optimized for speed and efficiency.</p>
+        </div>
+        <div class="feature-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/2799/2799696.png" alt="Feature 2">
+            <h2>Easy Integration</h2>
+            <p>Seamlessly integrate with your existing systems.</p>
+        </div>
+        <div class="feature-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/2910/2910115.png" alt="Feature 3">
+            <h2>Secure & Scalable</h2>
+            <p>Advanced security to protect your data and scale with growth.</p>
+        </div>
     </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+    </div>
+
 </body>
 </html>
