@@ -9,20 +9,20 @@
       var chatWidgetScript = document.createElement("script");
       chatWidgetScript.type = 'text/javascript';
       chatWidgetScript.src = "https://storage.googleapis.com/cdwidget/dist/assets/js/main.js";
+      document.body.appendChild(chatWidgetScript);
+
       chatWidgetScript.onload = function() {
-          // Wait until widget is loaded
-          var checkWidget = setInterval(function() {
-              var widgetIcon = document.querySelector("#cd-widget img"); // Adjust selector as needed
+          var checkExist = setInterval(function() {
+              var widgetIcon = document.querySelector('#cd-widget img'); // Adjust the selector if needed
               if (widgetIcon) {
-                  clearInterval(checkWidget);
                   widgetIcon.src = "https://media.tenor.com/E3rdAXiaSosAAAAi/cat-heart.gif";
                   widgetIcon.style.width = "50px"; // Adjust size if needed
                   widgetIcon.style.height = "50px";
+                  clearInterval(checkExist);
               }
-          }, 500);
+          }, 500); // Check every 500ms until the widget loads
       };
 
-      document.body.appendChild(chatWidgetScript);
       window.chatWidgetScriptLoaded = true;
   })();
 </script>
